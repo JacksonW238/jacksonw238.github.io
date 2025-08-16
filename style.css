@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    font-weight: normal;
+    font-size: 40px;
+    background-color: none;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: lighter;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-weight: lighter;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%);
+    background-color: black;
+}
+
+footer {
+    display: flex;
+    margin: 10px;
+    border-top: 2px solid antiquewhite;
+    padding-top: 5px;
+    width: 95%;
+    align-self: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: antiquewhite;
+    align-items: center;
+}
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    color: black;
+}
+
+a:hover {
+    color: mediumblue;
+}
+
+li {
+    display: none;
+    margin-left: 20px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: antiquewhite;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.email:hover {
+    color: grey;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-box-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sb {
+    border-left: 5px solid antiquewhite;
+    border-right: 5px solid antiquewhite;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.front-cover {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)70%), url(Images/IMG_4714.png);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    justify-content: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:95%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid antiquewhite;
+    border-top: 2px solid antiquewhite;
+    padding-bottom: 10px;
+}
+
+.proj {
+    border-bottom: 2px solid antiquewhite;
+    width: 95%;
+    margin-bottom: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.close {
+    display: block;
+    width: 300px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid antiquewhite;
+    transition: 0.2s ease-in-out;
+}
+
+.close:hover {
+    border-color: grey;
+    transform: scaleX(1.025);
+}
+
+.close:hover .icon-svg {
+    fill: grey;
+}
+
+.cont h1 {
+    font-size: 25px;
+}
+
+.cont:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    background: url(Images/logo_draft.png);
+    background-position: center;
+    background-size: contain;
+    width: 600px;
+    height: 108px;
+    margin-top: 200px;
+
+}
+
+.icon-svg {
+    fill: antiquewhite;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+a:hover .icon-svg {
+    fill: grey;
+}
+
+.icons a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.icons ion-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    float: left;
+    transition: 0.2s ease-in-out;
+}
+
+.icons a:hover {
+    color: gray;
+}
+
+.project-card {
+    border-radius: 2px;
+    border: none;
+    height: 300px;
+    width: 100%;
+    align-self: center;
+    align-content: center;
+    margin-top: 10px;
+    background: none;
+    transition: 0.2s ease-in-out;
+}
+
+.content {
+    display: none;
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.cont {
+    width: 95%;
+    justify-items: center;
+    background: none;
+    border: none
+}
+
+.cont:hover h1 {
+    color: grey;
+    border-color: grey;
+}
+
+.open .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.open .project-card {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.project-card:hover {
+    border-radius: 2px;
+    transform: scale(1.01);
+}
+
+.project-card:hover h1 {
+    color: grey;
+}
+
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+}
+
+.image-card {
+    width: 100px;
+    height: 100px;
+    transition: 0.2s ease-in-out;
+}
+
+.image-card::before {
+    background-image: url("Images/default.png");
+}
+
+.dwnloads {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.dwnloads a {
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.dl-icon {
+    background: none;
+}
+
+.folder-drop-down {
+    display: flex;
+    width: 30px;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.file-list {
+    width: 200px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.caret {
+    width: 10px;
+    height: 10px;
+}
+
+.about {
+    background-color: antiquewhite;
+}
+
+.about p {
+    width: 500px;
+    height: 100%;
+    margin: 10px;
+}
+
+/* PROJECTS */
+
+.p-rccar {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)80%), url("Images/RCCar/1.png");
+    background-size: cover;
+}
+
+.p-chasinghammer {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)80%), url("Images/ChasingHammer/cover.png");
+    background-size: cover;
+}
+
+.p-woodbender {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)80%), url("Images/WoodBender/1.png");
+    background-size: cover;
+}
+
+.p-clearancegauge {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)80%), url("Images/ClearanceGauge/1.png");
+    background-size: cover;
+}
+
+.p-lyreharp {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)80%), url("Images/LyreHarp/1.png");
+    background-size: cover;
+}
+
+.p-endtable {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)80%), url("Images/EndTable/1.png");
+    background-size: cover;
+}

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Design Portfolio</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+        />
+
+        <link rel="stylesheet" href="style.css"/>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+        
+        <script src="functionality.js" defer></script>
+        <script src="jquery-3.7.1.min.js" defer></script>
+    </head>
+    <body>
+        <div class="front-cover">
+            <div class="flex-box-c">
+                <div class="logo"></div>
+                <h1>DESIGNS</h1>
+            </div>
+        </div>
+        <div class="main">
+            <button class="cont" id="proj-btn" onclick="ToggleDropDown2('projects')">
+                <h1 class="proj">PROJECTS</h1>
+            </button>
+            <div class="projects hide" id="projects">
+                <div class="flex-box-c">
+                    <div class="flex-box-c" id="rc">
+                        <button class="project-card p-rccar" onclick="ToggleDropDown('rc')"><h1>CUSTOM RC CAR</h1></button>
+                        <div class="content">
+                            <div class="content-box">
+                                <div class="description">
+                                    <h2>Description</h2>
+                                    <p>
+                                        Enzo Ferrari said that this was the coolest thing hes ever seen. Actually.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Design</h2>
+                                    <p>
+                                        Inspired by early 2000's LeMans prototype racecars.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Construction</h2>
+                                    <p>
+                                        Still in design phase.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h2>Images</h2>
+                            </div>
+                            <div class="image-gallery" id="rc-im"></div>
+                            <div class="label">
+                                <h3>Download Part Files:</h3>
+                            </div>
+                            <div class="dwnloads">
+                                <a href="downloadables/Daul impellerV2.SLDPRT" id="prt" onclick="FileDownload('prt')">
+                                    <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                    impeller.SLDPRT
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-box-c" id="ch">
+                        <button class="project-card p-chasinghammer" onclick="ToggleDropDown('ch')"><h1>CHASING HAMMER</h1></button>
+                        <div class="content">
+                            <div class="content-box">
+                                <div class="description">
+                                    <h2>Description</h2>
+                                    <p>
+                                        Enzo Ferrari said that this was the coolest thing hes ever seen. Actually.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Design</h2>
+                                    <p>
+                                        Inspired by early 2000's LeMans prototype racecars.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Construction</h2>
+                                    <p>
+                                        Still in design phase.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h2>Images</h2>
+                            </div>
+                            <div class="image-gallery" id="ch-im"></div>
+                            <div class="label">
+                                <h3>Download Part Files:</h3>
+                            </div>
+    
+                        </div>
+                    </div>  
+                    <div class="flex-box-c" id="wb">
+                        <button class="project-card p-woodbender" onclick="ToggleDropDown('wb')"><h1>WOOD BENDER</h1></button>
+                        <div class="content">
+                            <div class="content-box">
+                                <div class="description">
+                                    <h2>Description</h2>
+                                    <p>
+                                        Enzo Ferrari said that this was the coolest thing hes ever seen. Actually.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Design</h2>
+                                    <p>
+                                        Inspired by early 2000's LeMans prototype racecars.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Construction</h2>
+                                    <p>
+                                        Still in design phase.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h2>Images</h2>
+                            </div>
+                            <div class="image-gallery" id="wb-im"></div>
+                            <div class="label">
+                                <h3>Download Part Files:</h3>
+                            </div>
+                            <div class="dwnloads">
+                                <a href="downloadables/WoodBender/WoodBender.zip" id="WoodBender" onclick="FileDownload('WoodBender')">
+                                    <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                    WoodBender.zip
+                                </a>
+                                <button class="folder-drop-down" id="wb-fdd" onclick="DropDownCaret('wb-fdd', 'wb-c', 'wb-fl'); ToggleDropDown('wb-fl')">
+                                    <img src="Images/Icons/folder2.svg">
+                                    <img src="Images/Icons/caret-right-fill.svg" class="caret" id="wb-c">  
+                                </button>
+                                <ul class="file-list" id="wb-fl">
+                                    <li>
+                                        <a href="downloadables/WoodBender/Assem1.SLDASM" id="Assem1" onclick="FileDownload('Assem1')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            Assem1.SLDASM
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/Base_plate.SLDPRT" id="Base_plate" onclick="FileDownload('Base_plate')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            Base_plate.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/cover.SLDPRT" id="cover" onclick="FileDownload('cover')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            cover.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/cover_stop.SLDPRT" id="cover_stop" onclick="FileDownload('cover_stop')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            cover_stop.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/frame.SLDPRT" id="frame" onclick="FileDownload('frame')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            frame.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/gun_housing.SLDPRT" id="gun_housing" onclick="FileDownload('gun_housing')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            gun_housing.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/gun_stand_1.SLDPRT" id="gun_stand_1" onclick="FileDownload('gun_stand_1')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            gun_stand_1.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/gun_stand_2.SLDPRT" id="gun_stand_2" onclick="FileDownload('gun_stand_2')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            gun_stand_2.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/Heat_gun_standin.SLDPRT" id="Heat_gun_standin"
+                                            onclick="FileDownload('Heat_gun_standin')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            Heat_gun_standin.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/pipe.SLDPRT" id="pipe" onclick="FileDownload('pipe')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            pipe.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/plate.SLDPRT" id="plate" onclick="FileDownload('plate')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            plate.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/Plate_side.SLDPRT" id="Plate_side" onclick="FileDownload('Plate_side')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            Plate_side.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/shield_1.SLDPRT" id="shield_1" onclick="FileDownload('shield_1')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            shield_1.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/Stand.SLDPRT" id="Stand" onclick="FileDownload('Stand')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            Stand.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/Support.SLDPRT" id="Support" onclick="FileDownload('Support')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            Support.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/support_triangle.SLDPRT" id="support_triangle"
+                                            onclick="FileDownload('support_triangle')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            support_triangle.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/Waall_2.SLDPRT" id="Waall_2" onclick="FileDownload('Waall_2')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            Waall_2.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/Wall.SLDPRT" id="Wall" onclick="FileDownload('Wall')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            Wall.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/Wall_2.SLDPRT" id="Wall_2" onclick="FileDownload('Wall_2')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            Wall_2.SLDPRT
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="downloadables/WoodBender/Wall_3.SLDPRT" id="Wall_3" onclick="FileDownload('Wall_3')">
+                                            <img src="Images/Icons/file-earmark-arrow-down.svg" alt="download" class="dl-icon" id="dl">
+                                            Wall_3.SLDPRT
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-box-c" id="cg">
+                        <button class="project-card p-clearancegauge" onclick="ToggleDropDown('cg')"><h1>CLEARANCE GAUGE</h1></button>
+                        <div class="content">
+                            <div class="content-box">
+                                <div class="description">
+                                    <h2>Description</h2>
+                                    <p>
+                                        Enzo Ferrari said that this was the coolest thing hes ever seen. Actually.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Design</h2>
+                                    <p>
+                                        Inspired by early 2000's LeMans prototype racecars.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Construction</h2>
+                                    <p>
+                                        Still in design phase.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h2>Images</h2>
+                            </div>
+                            <div class="image-gallery" id="cg-im"></div>
+                            <div class="label">
+                                <h3>Download Part Files:</h3>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="flex-box-c" id="lh">
+                        <button class="project-card p-lyreharp" onclick="ToggleDropDown('lh')"><h1>LYRE HARP</h1></button>
+                        <div class="content">
+                            <div class="content-box">
+                                <div class="description">
+                                    <h2>Description</h2>
+                                    <p>
+                                        Enzo Ferrari said that this was the coolest thing hes ever seen. Actually.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Design</h2>
+                                    <p>
+                                        Inspired by early 2000's LeMans prototype racecars.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Construction</h2>
+                                    <p>
+                                        Still in design phase.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h2>Images</h2>
+                            </div>
+                            <div class="image-gallery" id="lh-im"></div>
+                            <div class="label">
+                                <h3>Download Part Files:</h3>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="flex-box-c" id="dc">
+                        <button class="project-card p-derbycar" onclick="ToggleDropDown('dc')"><h1>DERBY CAR</h1></button>
+                        <div class="content">
+                            <div class="content-box">
+                                <div class="description">
+                                    <h2>Description</h2>
+                                    <p>
+                                        Enzo Ferrari said that this was the coolest thing hes ever seen. Actually.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Design</h2>
+                                    <p>
+                                        Inspired by early 2000's LeMans prototype racecars.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Construction</h2>
+                                    <p>
+                                        Still in design phase.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h2>Images</h2>
+                            </div>
+                            <div class="image-gallery" id="dc-im"></div>
+                            <div class="label">
+                                <h3>Download Part Files:</h3>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="flex-box-c" id="et">
+                        <button class="project-card p-endtable" onclick="ToggleDropDown('et')"><h1>END TABLE</h1></button>
+                        <div class="content">
+                            <div class="content-box">
+                                <div class="description">
+                                    <h2>Description</h2>
+                                    <p>
+                                        Enzo Ferrari said that this was the coolest thing hes ever seen. Actually.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Design</h2>
+                                    <p>
+                                        Inspired by early 2000's LeMans prototype racecars.
+                                    </p>
+                                </div>
+                                <div class="description">
+                                    <h2>Construction</h2>
+                                    <p>
+                                        Still in design phase.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="label"><h2>Images</h2></div>
+                            <div class="image-gallery" id="et-im"></div>
+                            <div class="label">
+                                <h3>Download Part Files:</h3>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <button class="close" id="projects" onclick="ToggleDropDown2('projects')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="antiquewhite" class="icon-svg" viewBox="0 0 16 16">
+                        <path
+                            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                    </svg>
+                </button>
+            </div>
+
+            <button class="cont" id="about-btn" onclick="ToggleDropDown2('about')">
+                <h1 class="proj">ABOUT</h1>
+            </button>
+            <div class="projects hide" id="about">
+                <div class="project-card about">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi accusamus voluptatum amet consequatur a dignissimos obcaecati non. Voluptatem modi molestiae animi consectetur in nisi commodi, ipsam voluptates magni est beatae?</p>
+                </div>
+                <button class="close" id="about" onclick="ToggleDropDown2('about')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="antiquewhite" class="icon-svg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />            
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <p><iframe src="/descriptions/WoodBender/1.txt" frameborder="0" height="400" width="95%"></iframe></p>
+        <footer>
+            Follow me on LinkedIn: 
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/jackson-wilson-60bb1a358"><ion-icon name="logo-linkedIn"></ion-icon></a>
+            </div>
+            |
+            Email: 
+            <a class="email" href="mailto:jackson.kelly.wilson@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="antiquewhite" class="icon-svg"
+                viewBox="0 0 16 16">
+                <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />        
+                </svg>
+                jackson.kelly.wilson@gmail.com
+            </a>
+        </footer>
+    </body>
+</html>
