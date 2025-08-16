@@ -43,6 +43,7 @@ body {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     margin: 10px;
     border-top: 2px solid antiquewhite;
     padding-top: 5px;
@@ -374,4 +375,16 @@ a:hover .icon-svg {
 .p-endtable {
     background: linear-gradient(to top, rgba(0,0,0,0.5)80%), url("Images/EndTable/1.png");
     background-size: cover;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 600px) {
+    .email {
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
 }
