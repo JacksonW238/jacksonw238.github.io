@@ -164,7 +164,6 @@ li {
     width: 600px;
     height: 108px;
     margin-top: 200px;
-
 }
 
 .icon-svg {
@@ -384,7 +383,21 @@ a:hover .icon-svg {
         font-size: 15px;
     }
 
+    .email .icon-svg {
+        margin-left: 0px;
+    }
+
     footer {
         font-size: 15px;
+    }
+
+    .logo {
+        background: url("Images/logo_small.png");
+        width: 350px;
+        height: 63px;
+    }
+
+    h1 {
+        font-size: 30px;
     }
 }
