@@ -57,12 +57,14 @@ async function LoadImages(id, folder) {
 
 	for (let i = 1; i <= 26; i++) {
 		// Get Image descriptions
+		let data;
 		try {
-			const response = await fetch('/descriptions/WoodBender/1.txt');
-			const data = await response.text();
+			const response = await fetch('https://raw.githubusercontent.com/JacksonW238/jacksonw238.github.io/main/descriptions/' + folder + '/' + i + '.txt');
+		    data = await response.text();
 			console.log(data);
 		} catch (err) {
 			console.error(err);
+			data = ' ';
 		}
 
 		////
