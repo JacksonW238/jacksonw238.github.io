@@ -60,14 +60,16 @@ async function LoadImages(id, folder) {
 	for (let i = 1; i <= 26; i++) {
 		// Get Image descriptions:
 		let text;
+		let txt;
 		try {
 			const response = await fetch('https://raw.githubusercontent.com/JacksonW238/jacksonw238.github.io/main/descriptions/' + folder + '/' + i + '.txt');
 		    text = await response.text();
 			descriptions.push({ _txt: text, _id: folder + '-' + i + '-txt' });
+			txt = text;
 
 		} catch (err) {
-			console.error(err);
-			text = ' ';
+			//console.error(err);
+			txt = ' ';
 		}
 
 		////
@@ -78,22 +80,33 @@ async function LoadImages(id, folder) {
 		const imEle = document.createElement('img');
 		imEle.src = path
 		imEle.id = folder + i;
+		imEle.alt = txt;
 
 		imEle.classList.add("image-card");
-		//imEle.id = id + '-' + i;
+		// imEle.id = id + '-' + i;
 		Container.appendChild(imEle);
 
 		imEle.onerror = function () {
-		Container.removeChild(imEle);
+			Container.removeChild(imEle);
 		};
 	}
 
 	////
 
 	// Set up image pop-ups:
-
-
 	console.log('Loaded Images from ' + folder);
+}
+
+function DisplayImage(id_image) {
+	popup = document.getElementById('pop-up');
+	image = document.getElementById(id_image);
+	image_cont = document.getElementById('ipu-image');
+	desc = document.getElementById('popup-p');
+
+	console.log('clicked');
+	popup.classList.remove('hide');
+	image_cont.src = image.src;
+	desc.innerHTML = image.alt;
 }
 
 function CloseBtn(id) {
@@ -108,3 +121,13 @@ LoadImages("cg-im", "ClearanceGauge");
 LoadImages("lh-im", "LyreHarp");
 LoadImages("dc-im", "DerbyCar");
 LoadImages("et-im", "EndTable");
+
+document.addEventListener('click', function (event) {
+	const clicked = document.getElementById(event.target.id);
+
+	if (clicked.classList.item(0) === 'image-card') {
+		DisplayImage(event.target.id);
+
+		
+	}
+})
