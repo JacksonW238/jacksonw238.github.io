@@ -341,12 +341,14 @@ a:hover .icon-svg {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .footnote {
     margin: auto;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
     background: antiquewhite;
     height: calc(100% - 40px - 80vmin);
     width: 80vmin;
@@ -470,5 +472,13 @@ a:hover .icon-svg {
     .front-cover {
         background: linear-gradient(to top, rgba(0, 0, 0, 0.5)70%), url(Images/Cover_sm.png);
         background-position: center;
+    }
+
+    .ipu-image {
+        margin-top: 100px;
+    }
+
+    .footnote {
+        height: calc(100% - 200px - 80vmin);
     }
 }
