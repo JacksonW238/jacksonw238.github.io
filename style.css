@@ -3,6 +3,22 @@
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(32, 32, 32, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(250, 235, 215, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: antiquewhite; 
+}
+
 h1 {
     font-family: 'Times New Roman', Times, serif;
     color: antiquewhite;
@@ -158,7 +174,7 @@ li {
 }
 
 .logo {
-    background: url(Images/logo_draft.png);
+    background: url('Images/logo_draft.png');
     background-position: center;
     background-size: contain;
     width: 600px;
@@ -290,6 +306,56 @@ a:hover .icon-svg {
 
 .image-card::before {
     background-image: url("Images/default.png");
+}
+
+.image-pop-up {
+    background-color: rgba(0, 0, 0, 0.9);
+    /* opacity: 0.5; */
+    background-size: cover;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: fixed; top: 0; left: 0;
+}
+
+.close-btn {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    fill: antiquewhite;
+    position: absolute;
+    right: 0;
+}
+
+.close-btn:hover {
+    fill: grey;
+}
+
+.ipu-image {
+    display: block;
+    background: antiquewhite;
+    height: 80vmin;
+    aspect-ratio: 1/1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.footnote {
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: antiquewhite;
+    height: calc(100% - 40px - 80vmin);
+    width: 80vmin;
+    overflow-y: scroll;
+}
+
+.footnote p {
+    color: black;
+    margin: 5px 10px;
 }
 
 .dwnloads {

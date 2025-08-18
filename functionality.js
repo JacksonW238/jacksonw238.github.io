@@ -55,21 +55,24 @@ async function LoadImages(id, folder) {
 	const Container = document.getElementById(id);
 	var path;
 
+	let descriptions = [];
+
 	for (let i = 1; i <= 26; i++) {
-		// Get Image descriptions
-		let data;
+		// Get Image descriptions:
+		let text;
 		try {
 			const response = await fetch('https://raw.githubusercontent.com/JacksonW238/jacksonw238.github.io/main/descriptions/' + folder + '/' + i + '.txt');
-		    data = await response.text();
-			console.log(data);
+		    text = await response.text();
+			descriptions.push({ _txt: text, _id: folder + '-' + i + '-txt' });
+
 		} catch (err) {
 			console.error(err);
-			data = ' ';
+			text = ' ';
 		}
 
 		////
 
-		// Add Images to gallery
+		// Add Images to gallery:
 		path = 'Images/' + folder + '/' + i.toString() + '.png'
 
 		const imEle = document.createElement('img');
@@ -77,13 +80,18 @@ async function LoadImages(id, folder) {
 		imEle.id = folder + i;
 
 		imEle.classList.add("image-card");
-		imEle.id = id + '-' + i;
+		//imEle.id = id + '-' + i;
 		Container.appendChild(imEle);
 
 		imEle.onerror = function () {
 		Container.removeChild(imEle);
 		};
 	}
+
+	////
+
+	// Set up image pop-ups:
+	
 
 	console.log('Loaded Images from ' + folder);
 }
