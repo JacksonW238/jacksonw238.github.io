@@ -433,7 +433,7 @@ a:hover .icon-svg {
 }
 
 .p-lyreharp {
-    background: linear-gradient(to top, rgba(0,0,0,0.5)80%), url("Images/LyreHarp/1.png");
+    background: linear-gradient(to top, rgba(0,0,0,0.5)80%), url("Images/LyreHarp/cover.png");
     background-size: cover;
 }
 
