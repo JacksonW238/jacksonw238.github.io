@@ -121,7 +121,7 @@ li {
 }
 
 .front-cover {
-    background: linear-gradient(to top, rgba(0,0,0,0.5)70%), url(Images/IMG_4714.png);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)70%), url(Images/Cover_lg.png);
     background-position: center;
     background-size: cover;
     height: 800px;
@@ -465,5 +465,10 @@ a:hover .icon-svg {
 
     h1 {
         font-size: 30px;
+    }
+
+    .front-cover {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5)70%), url(Images/Cover_sm.png);
+        background-position: center;
     }
 }
