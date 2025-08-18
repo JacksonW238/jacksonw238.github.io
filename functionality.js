@@ -91,9 +91,14 @@ async function LoadImages(id, folder) {
 	////
 
 	// Set up image pop-ups:
-	
+
 
 	console.log('Loaded Images from ' + folder);
+}
+
+function CloseBtn(id) {
+	const win = document.getElementById(id);
+	win.classList.add('hide');
 }
 
 LoadImages("rc-im", "RCCar");
