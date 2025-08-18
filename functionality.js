@@ -127,7 +127,5 @@ document.addEventListener('click', function (event) {
 
 	if (clicked.classList.item(0) === 'image-card') {
 		DisplayImage(event.target.id);
-
-		
 	}
-})
+});
